@@ -17,7 +17,7 @@ export class CoffeesController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id : string) : Coffee {
+  findOne(@Param('id') id : string) {
     return this.coffeesService.findOne(id);
   }
 
